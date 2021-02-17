@@ -1,0 +1,22 @@
+.header-lawer-right{
+    display: flex;
+    align-items: center;
+}
+
+.header-lawer-right .outer-search-box-style1{
+    display: none;
+}
+
+.header-lawer-right .languag-btn{
+    padding: 20px 20px 20px 40px;
+    cursor: pointer;
+}
+
+.header-lawer-right .languag-btn img{
+    width: 24px;
+    height: 24px;
+}
+
+.header-lawer-right .languag-btn .inactive{
+    display: none;
+}
