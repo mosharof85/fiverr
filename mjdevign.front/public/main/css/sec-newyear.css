@@ -1,0 +1,129 @@
+.sec-newyear{
+    background-image:url("../images/sec-newyear/promotion-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 305px;
+    width: 100%;
+}
+
+.sec-newyear .section-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 50px;
+}
+
+.sec-newyear .right{
+    display: flex;
+    align-items: center;
+}
+
+.sec-newyear .right .right-content{
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.sec-newyear .right .right-text2{
+    background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='white' stroke-width='6' stroke-dasharray='10' stroke-dashoffset='6' stroke-linecap='square'/%3e%3c/svg%3e");
+    display: inline-block;
+    margin: 16px 0 28px;
+    width: 237px;
+    height: 68px;
+    text-align: center;
+    line-height: 68px;
+}
+
+.sec-newyear .right .right-text3{
+    text-align: center;
+}
+
+/*@media screen and (max-width: 991px) {*/
+/*    .sec-newyear .section-container{*/
+/*        grid-template-columns: 1fr;*/
+/*    }*/
+
+/*    .sec-newyear .section-container .left{*/
+/*        display: none;*/
+/*    }*/
+/*}*/
+
+/*.sec-newyear .left-content{*/
+/*    display: inline-block;*/
+/*    text-align: center;*/
+/*}*/
+
+/*.sec-newyear .left{*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    justify-content: flex-end;*/
+/*}*/
+
+/*@media screen and (max-width: 1279px){*/
+/*    .sec-newyear .left{*/
+/*        justify-content: center;*/
+/*        z-index: 99;*/
+/*    }*/
+/*}*/
+
+/*.sec-newyear .left-text1{*/
+/*    font-size: 48px;*/
+/*    font-weight: 700;*/
+/*    color: #ffffff;*/
+/*    text-align: center;*/
+/*    margin-bottom: 20px;*/
+/*}*/
+
+/*.sec-newyear .left-text2{*/
+/*    font-size: 18px;*/
+/*    font-weight: 400;*/
+/*    color: #ffffff;*/
+/*    text-align: center;*/
+/*}*/
+
+/*.sec-newyear .right{*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*}*/
+
+/*@media screen and (max-width: 1279px){*/
+/*    .sec-newyear .right{*/
+/*        justify-content: center;*/
+/*        z-index: 99;*/
+/*    }*/
+/*}*/
+
+/*.sec-newyear .right-content{*/
+/*    width: 292px;*/
+/*    height: 225px;*/
+/*    background: url(../images/sec-newyear/hero-offer-img.png);*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    align-items: center;*/
+/*    justify-content: center;*/
+/*    position: relative;*/
+/*}*/
+
+/*.sec-newyear .right-content::after{*/
+/*    content: '';*/
+/*    position: absolute;*/
+/*    width: 86px;*/
+/*    height: 86px;*/
+/*    background: url(../images/sec-newyear/megaphone.png);*/
+/*    bottom: 0;*/
+/*    right: -100px;*/
+/*    transform: rotate(25deg);*/
+/*}*/
+
+/*.sec-newyear .right-text1{*/
+/*    font-size: 52px;*/
+/*    font-weight: 700;*/
+/*    color: #FFFFFF;*/
+/*}*/
+
+/*.sec-newyear .right-text2{*/
+/*    font-size: 22px;*/
+/*    font-weight: 700;*/
+/*    color: #FFFFFF;*/
+/*}*/

@@ -1,0 +1,65 @@
+.sec-quatily{
+    padding: 60px 0 70px;
+    background-color: #FFFFFF;
+}
+
+.sec-quatily .section-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    min-width: 960px;
+}
+
+.sec-quatily .box:nth-child(2n){
+    margin-top: 50px;
+}
+
+@media screen and (max-width: 575px){
+    .sec-quatily .box:nth-child(2n){
+        margin-top: 0;
+    }
+}
+
+.sec-quatily .box-container{
+    border-radius: 10px;
+    background-color: #ffffff;
+    padding: 34px 31px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.sec-quatily .box-container .box-img{
+    position: absolute;
+    right: 1px;
+    bottom: -4px;
+}
+
+.sec-quatily .box-container::before{
+    content: '';
+    position: absolute;
+    right: -37.5px;
+    width: 75px;
+    height: 75px;
+    top: -37.5px;
+    border-radius: 50%;
+    background-color: rgba(232, 5, 102, 0.90);
+    transition: all .3s;
+    z-index: -1;
+}
+
+.sec-quatily .box-container:hover::before{
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+    background-color: rgba(232, 5, 102, 0.90);
+}
+
+.sec-quatily .box-container:hover > *{
+    color: #FFFFFF;
+}

@@ -1,0 +1,43 @@
+.sec-services{
+    background-color: #F6F6F6;
+    padding: 74px 0 70px;
+}
+
+.sec-services .section-container.services{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+}
+
+.sec-services .service{
+    text-align: center;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    transition: background-color .3s ease;
+    cursor: pointer;
+}
+
+.sec-services .service a{
+    color: #495057;
+    font-weight: 600;
+    font-family: 'Montserrat-Medium', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    font-size: 14px;
+}
+
+.sec-services .service a img{
+    margin-left: 10px;
+}
+
+.sec-services .service:hover{
+    background-color: #4C2763;
+}
+
+.sec-services .service:hover *{
+    color: #ffffff;
+    transition: color .3s ease;
+}

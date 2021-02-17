@@ -1,0 +1,70 @@
+header .nav-link:not(.sign-in) a{
+    color: #FFFFFF;
+}
+
+
+.sec-hero .hero-left {
+    background: url(../../images/others/mobileapp/Bg116.png) no-repeat top left;
+}
+
+@media screen and (min-width: 992px) {
+    .sec-hero{
+        overflow-x: hidden;
+    }
+
+    .sec-hero .hero-left{
+        background-size: 100% 105%;
+    }
+
+    .sec-hero .section-container .right img{
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    .sec-hero .section-container .right .img-wrapper{
+        position: relative;
+    }
+    .sec-hero .section-container .right img {
+        position: absolute;
+        top: 0px;
+        left: -70px;
+        width: initial;
+        height: initial;
+    }
+}
+
+@media screen and (min-width: 1400px){
+    .sec-hero .section-container .right img{
+        left: -50px
+    }
+}
+
+
+@media screen and (min-width: 1200px){
+    .sec-hero .left h1{
+        font-size: 41px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .sec-hero{
+        padding-bottom: 0;
+    }
+
+    .sec-quatily{
+        padding-top: 0;
+    }
+}
+
+.sec-hero .section-container .left p img{
+    top: 100%;
+    left: 35%;
+}
+
+@media screen and (max-width: 991px) {
+    .sec-info .section-container .left{
+        display: block;
+    }
+}

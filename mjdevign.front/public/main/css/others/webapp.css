@@ -1,0 +1,9 @@
+
+.sec-hero .section-container .right img {
+    width: initial;
+    height: initial;
+}
+
+.sec-hero .section-container .left p img{
+    top: 100%;
+}

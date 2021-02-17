@@ -1,0 +1,208 @@
+.sec-clac-bg{
+    height: 346px;
+    position: relative;
+}
+
+.sec-clac-bg .section-container{
+    height: 100%;
+    position: relative;
+}
+
+.sec-clac-bg .top-img{
+    width: 618px;
+    height: 484px;
+    top: -138px;
+    right: -28px;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.sec-calc{
+    height: 346px;
+    position: relative;
+    top: -346px;
+    background-image: url("../images/sec-calculator/bg.png");
+}
+
+.sec-calc .section-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 50px;
+}
+
+.sec-calc .left{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    position: relative;
+    top: -100px;
+}
+
+.sec-calc .left .sliders{
+    width: 100%;
+    min-height: 100%;
+    background-color: #FFFFFF;
+    border: 1px solid black;
+    border-radius: 8px;
+    max-width: 390px;
+    position: relative;
+}
+
+.sec-calc .left .sliders .svg{
+    position: absolute;
+    top: -53px;
+    left: -55px;
+}
+
+.sec-calc .left .sliders .svg p{
+    position: absolute;
+    top: 37%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    text-align: center;
+}
+
+.sec-calc .left .sliders .svg svg{
+    fill: #2B074D;
+    width: 505px;
+    height: 107px;
+}
+
+.sec-calc .left .sliders .sliders-title{
+    text-align: center;
+    margin-top: 50px;
+}
+
+.sec-calc .slider{
+    margin: 10px;
+    background-color: #F0EDF2;
+    border-radius: 8px;
+    padding: 10px;
+}
+.sec-calc .slider .info{
+    display: flex;
+    color: black;
+    font-size: 13px;
+    font-weight: 700;
+    font-family: Montserrat-Medium, sans-serif;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sec-calc .slider input{
+    margin: 15px 0;
+    width: 100%;
+    cursor: pointer;
+}
+
+.sec-calc .slider .lbls{
+    position: relative;
+    font-size: 13px;
+}
+
+.sec-calc .slider .labels{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.sec-calc .slider .labels span{
+    text-align: right;
+}
+
+.sec-calc .slider input {
+    background: linear-gradient(to right, #E80566 0%, #E80566 50%, #fff 50%, #fff 100%);
+    border-radius: 8px;
+    height: 7px;
+    width: 356px;
+    outline: none;
+    transition: background 450ms ease-in;
+    -webkit-appearance: none;
+}
+
+.sec-calc .slider input::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 24px;
+    width: 24px;
+    border-radius: 50%;
+    background: #E80566;
+}
+
+.sec-calc .right{
+    margin-top: -100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.sec-calc .right .one{
+    position: absolute;
+    top: 60px;
+}
+.sec-calc .right .one .inside{
+    position: relative;
+}
+
+.sec-calc .right .one .inside p{
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.sec-calc .right .two{
+    width: 430px;
+    height: 430px;
+    border-radius: 50%;
+    border: 3px solid white;
+    box-shadow: 0.00px 1.00px 4px 2px rgba(255,255,255,0.38);
+    padding: 30px;
+}
+.sec-calc .right .two .inside{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.sec-calc .right .two .calc-val{
+    text-shadow:rgba(0, 0, 0, 0.4) 0px 4px 5px;
+    font-size: 76px;
+    font-weight: 700;
+    font-family: Montserrat, sans-serif;
+}
+
+.sec-calc .right .three{
+    display: flex;
+    position: absolute;
+    bottom: 55px;
+}
+
+.sec-calc .right .three .three_div1{
+    position: relative;
+}
+
+.sec-calc .right .three .three_div1 p{
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 24px;
+    left: 10px;
+}
+
+.sec-calc .right .three_div2 img{
+    padding: 15px;
+    border: 3px solid #E94366;
+    border-radius: 50%;
+    background-color: #ffffff;
+}
