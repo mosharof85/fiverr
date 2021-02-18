@@ -196,3 +196,148 @@
         max-width: 1140px;
     }
 }
+
+
+/**
+* Added to style login-register modal
+ */
+
+.modal-content hr{
+    display: none;
+}
+
+.modal-content button{
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.modal-content .close span{
+    font-weight: 700;
+    font-size: 21.6px;
+    color: #000;
+}
+
+.modal-content h3{
+    font-weight: 500;
+    color: #212529;
+    font-size: 25px;
+}
+
+.modal-content p{
+    color: #212529;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+
+.modal-content p button{
+    padding: 7px 13px;
+    border-radius: 3px;
+}
+
+.modal-content p button:hover{
+    background-color: #e2e6ea;
+    transition: background-color .3s ease;
+}
+
+.modal-content .d-flex.justify-content-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.modal-content form *{
+    color: #212529;
+}
+
+.modal-content form .row{
+    display: grid;
+    grid-template-columns: 33.33% 66.67%;
+    grid-gap: 25px;
+    margin-bottom: 15px;
+}
+
+.modal-content form .col-form-label{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 15px;
+}
+
+#registerModalForm select,
+.modal-content form input{
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #212529;
+    border: 1px solid #dee2e6;
+    font-size: 15px;
+}
+
+.modal-content form button{
+    width: 63px;
+    height: 37px;
+    line-height: 37px;
+    color: #FFFFFF;
+    font-size: 14px;
+    background-color: #3490dc;
+    border-radius: 5px;
+}
+
+.modal-content form a.btn-link{
+    color: #1d68a7;
+    font-size: 14px;
+}
+
+#registerModalForm .col-form-label{
+    margin-bottom: 10px;
+}
+
+#registerModalForm .form-row{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-bottom: 10px;
+}
+
+#registerModalForm .form-row.w-50{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+
+#registerModalForm select,
+#registerModalForm input{
+    background-color: #FFFFFF;
+}
+
+#registerModalForm .form-group *{
+    display: block;
+    text-align: left;
+}
+
+#registerModalForm .form-row:not(.w-50) *{
+    justify-content: flex-start
+}
+
+#registerModalForm select{
+    width: 210px;
+    padding: 10px;
+}
+
+#registerModalForm button{
+    text-align: center !important;
+}
+
+.border-bottom{
+    border-bottom: 1px solid #dee2e6;
+}
+
+.border-top{
+    border-top: 1px solid #dee2e6;
+}

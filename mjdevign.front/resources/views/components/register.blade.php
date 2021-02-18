@@ -13,19 +13,19 @@
                 <!-- </button> -->
             </div>
             <div class="modal-body">
-                <div class="row">
+                <div class="row row-topbar">
                     <div class="col-md-2">
                         <img src="/images/cb2.png" style="height:50px;width:50px;align:center;display: block; margin-left: auto; margin-right: auto;">  
                     </div>
                     <div class="col">
-                        <h3 >Create Your Account</h3>
+                        <h3 style="text-align: center">Create Your Account</h3>
                         <p >Already a member? <button data-dismiss="modal" data-toggle="modal" data-target="#loginModal" class="btn btn-light" style="text-decoration: underline;">Log In</button></p>
                     </div>
                 </div>
             <form id="registerModalForm"  >
                         @csrf
                         <input type="hidden" name="modal_type" value="SignUp"/>
-                        <div class="form-row">
+                        <div class="form-row w-50">
                             <div class="form-group col-md-6">
                                 <label for="name" class="col-form-label text-md-right">{{ __('First name') }}</label>
                                 <input id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
@@ -55,7 +55,7 @@
                                 <label for="name" class="col-form-label text-md-right">{{ __('Phone Number') }}</label>
                                 <input id="phonenumber" type="number" class="form-control " name="phonenumber" value="{{ old('phonenumber') }}"  autocomplete="phonenumber" autofocus>
                         </div>
-                        <div class="form-row">
+                        <div class="form-row w-50">
                             <div class="form-group col-md-6">
                                 <label for="country" class=" col-form-label text-md-right">{{ __('Country') }}</label>
 
@@ -76,7 +76,7 @@
                             
                         </div>
 
-                        <div class="form-row">
+                        <div class="form-row w-50">
                             <div class="form-group col-md-6">
                                 <label for="password" class="col-form-label text-md-right">{{ __('Password') }}</label>
 
@@ -87,7 +87,7 @@
                                 </span>
                             </div>
 
-                            <div class="form-group">
+                            <div class="form-group row-password-confirm">
                                 <label for="password-confirm" class=" col-form-label text-md-right">{{ __('Confirm Password') }}</label>
 
                                 <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password">

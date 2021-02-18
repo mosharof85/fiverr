@@ -1,4 +1,4 @@
-@extends('layouts.website-pageHeaderFooter')
+@extends('layouts.combineHeaderFooter')
 
 
 @section('content')

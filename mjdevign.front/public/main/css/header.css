@@ -1,7 +1,7 @@
 header{
     position: fixed;
     width: 100%;
-    z-index: 1050;
+    z-index: 1000;
     padding: 30px 0 10px;
 }
 

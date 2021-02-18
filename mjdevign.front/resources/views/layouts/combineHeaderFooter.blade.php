@@ -14,20 +14,81 @@
     <link rel="stylesheet" href="{{ asset ( 'main/css/style.css' ) }}">
     <link rel="stylesheet" href="{{ asset ( 'main/css/header.css' ) }}">
     <link rel="stylesheet" href="{{ asset ( 'main/css/sec-hero.css' ) }}">
-    <link rel="stylesheet" href="{{ asset ( 'main/css/sec-quality.css' ) }}">
+
+    @if (Route::getFacadeRoot()->current()->uri()!=('home')
+            or Route::getFacadeRoot()->current()->uri()!='/')
+        <link rel="stylesheet" href="{{ asset ( 'main/css/sec-quality.css' ) }}">
+    @endif
+
     <link rel="stylesheet" href="{{ asset ( 'main/css/sec-info.css' ) }}">
-    <link rel="stylesheet" href="{{ asset ( 'main/css/sec-process.css' ) }}">
-    <link rel="stylesheet" href="{{ asset ( 'main/css/sec-contact.css' ) }}">
+
+    @if (Route::getFacadeRoot()->current()->uri()!=('home')
+            or !Route::getFacadeRoot()->current()->uri()!='/')
+        <link rel="stylesheet" href="{{ asset ( 'main/css/sec-process.css' ) }}">
+    @endif
+
+    @if (Route::getFacadeRoot()->current()->uri()=='website-page'
+            or Route::getFacadeRoot()->current()->uri()==('landingpage-page')
+            or Route::getFacadeRoot()->current()->uri()==('dropshipping-page'))
+        <link rel="stylesheet" href="{{ asset ( 'main/css/sec-package.css' ) }}">
+    @endif
+
+    @if (Route::getFacadeRoot()->current()->uri()==('home')
+            or Route::getFacadeRoot()->current()->uri()=='/')
+        <link rel="stylesheet" href="{{ asset ( 'main/css/sec-services.css' ) }}">
+    @endif
+
+    @if (Route::getFacadeRoot()->current()->uri()==('home')
+            or Route::getFacadeRoot()->current()->uri()=='/'
+            or Route::getFacadeRoot()->current()->uri()==('website-page')
+            or Route::getFacadeRoot()->current()->uri()==('landingpage-page')
+            or Route::getFacadeRoot()->current()->uri()==('dropshipping-page'))
+        <link rel="stylesheet" href="{{ asset ( 'main/css/sec-newyear.css' ) }}">
+    @endif
+
+    @if (Route::getFacadeRoot()->current()->uri()=='website-page'
+            or Route::getFacadeRoot()->current()->uri()==('landingpage-page')
+            or Route::getFacadeRoot()->current()->uri()==('dropshipping-page'))
+        <link rel="stylesheet" href="{{ asset ( 'main/css/sec-pricing.css' ) }}">
+    @endif
+
+
     <link rel="stylesheet" href="{{ asset ( 'main/css/sec-faq.css' ) }}">
     <link rel="stylesheet" href="{{ asset ( 'main/css/sec-support.css' ) }}">
     <link rel="stylesheet" href="{{ asset ( 'main/css/footer.css' ) }}">
-    <link rel="stylesheet" href="{{ asset ( 'main/css/others/mobileapp.css' ) }}">
+
+    @if (Route::getFacadeRoot()->current()->uri()==('webapp-page') or Route::getFacadeRoot()->current()->uri()==('mobileapp-page'))
+        <link rel="stylesheet" href="{{ asset ( 'main/css/sec-contact.css' ) }}">
+    @endif
+
+    @if (Route::getFacadeRoot()->current()->uri()=='/' or Route::getFacadeRoot()->current()->uri()==('home'))
+        <link rel="stylesheet" href="{{ asset ( 'main/css/others/index.css' ) }}">
+    @endif
+
+    @if (Route::getFacadeRoot()->current()->uri()==('webapp-page'))
+        <link rel="stylesheet" href="{{ asset ( 'main/css/others/webapp.css' ) }}">
+    @endif
+
+    @if (Route::getFacadeRoot()->current()->uri()==('mobileapp-page'))
+        <link rel="stylesheet" href="{{ asset ( 'main/css/others/mobileapp.css' ) }}">
+    @endif
+
+    @if (Route::getFacadeRoot()->current()->uri()==('landingpage-page'))
+        <link rel="stylesheet" href="{{ asset ( 'main/css/others/landingpage.css' ) }}">
+    @endif
+
+    @if (Route::getFacadeRoot()->current()->uri()==('dropshipping-page'))
+        <link rel="stylesheet" href="{{ asset ( 'main/css/sec-desc.css' ) }}">
+        <link rel="stylesheet" href="{{ asset ( 'main/css/sec-calculator.css' ) }}">
+        <link rel="stylesheet" href="{{ asset ( 'main/css/others/dropshipping.css' ) }}">
+    @endif
+
     <link rel="stylesheet" href="{{ asset ( 'main/themify-icons/themify-icons.css' ) }}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
     <link rel="stylesheet" href="{{ asset ( 'main/themify-icons/themify-icons.css' ) }}">
     <link rel="icon" href="{{ asset ( 'main/images/diamond.ico' ) }}">
 
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/modal.css') }}" rel="stylesheet">
     <style>
         a:hover {
             text-decoration: none !important;
@@ -37,6 +98,9 @@
 
 </head>
 <body>
+
+<a href="{{Route::getFacadeRoot()->current()->uri()}}"></a>
+
 @include('components.login')
 @include('components.register')
 <header>
@@ -71,18 +135,18 @@
                                data-target="#loginModal">{{ __('Sign In') }}</a>
                         </li>
                     @endif
-                    @else
-                        <li class="nav-link sign-in">
-                            <a href="{{ route('logout') }}"
-                               onclick="event.preventDefault();
+                @else
+                    <li class="nav-link sign-in">
+                        <a href="{{ route('logout') }}"
+                           onclick="event.preventDefault();
                                                     document.getElementById('logout-form').submit();">
-                                {{ __('Logout') }}
-                            </a>
+                            {{ __('Logout') }}
+                        </a>
 
-                            <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
-                                @csrf
-                            </form>
-                        </li>
+                        <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                            @csrf
+                        </form>
+                    </li>
                 @endguest
             </ul>
         </nav>

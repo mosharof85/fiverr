@@ -2,36 +2,21 @@
     <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
         <div class="modal-header">
-            <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close"> -->
             <a href="{{url('/home')}}" class="close" ><span aria-hidden="true">Back</span></a>
-            <!-- </button> -->
         </div>
             <br>
             <img src="/images/cb2.png" style="height:50px;width:50px;align:center;display: block; margin-left: auto; margin-right: auto;">
             <h3 style="text-align:center">Log In</h3>
-            <p style="text-align:center">Not a member? <button data-dismiss="modal" data-toggle="modal" data-target="#signUpModal" class="btn btn-light" style="text-decoration: underline;">Sign Up</button></p>
-            <hr>
-            <br>
-            <!-- <div class="form-group row mb-0">
-                <div class="col-md-8 offset-md-4">
-                    <a href="{{ url('/auth/redirect/facebook') }}" class="btn btn-primary"><i class="fa fa-facebook"></i> Sign In with Facebook</a>
-                </div>
-            </div> -->
-            <div class="form-group row mb-0 d-flex justify-content-center">
+            <p class="border-bottom" style="text-align:center">Not a member? <button data-dismiss="modal" data-toggle="modal" data-target="#signUpModal" class="btn btn-light" style="text-decoration: underline;">Sign Up</button></p>
+            <div class="form-group row mb-0 d-flex justify-content-center border-bottom">
 
                     <a href="{{ url('/auth/redirect/facebook') }}">
                     <img src="{{ url('/images/loginfb.png') }}" alt="fblog.png" style="width: 318px; height: 52px; object-fit: cover; object-position: 50% 50%;">
                     </a>
             </div>
-            <hr>
-            <br>
-            <!-- <div class="col-md-8 offset-md-4">
-                <button type="button" class="btn btn-primary" data-dismiss="modal" data-toggle="modal" data-target="#exampleModal" >
-                Sign In with Email</a> -->
-            <div class="form-group row mb-0 d-flex justify-content-center">
+            <div class="form-group row mb-0 d-flex justify-content-center border-bottom">
                 <button type="button" class="btn " data-dismiss="modal" data-toggle="modal" data-target="#exampleModal" >
                     <img src="{{ url('/images/loginEmail.png') }}" alt="fblog.png" style="width: 318px; height: 52px; object-fit: cover; object-position: 50% 50%;">
-
                 </button>
 
             </div>
@@ -56,10 +41,10 @@
             <br>
             <img src="/images/cb2.png" style="height:50px;width:50px;align:center;display: block; margin-left: auto; margin-right: auto;">
             <h3 style="text-align:center">Sign Up</h3>
-            <p style="text-align:center">Already a member? <button data-dismiss="modal" data-toggle="modal" data-target="#loginModal" class="btn btn-light" style="text-decoration: underline;">Log In</button></p>
+            <p class="border-bottom" style="text-align:center">Already a member? <button data-dismiss="modal" data-toggle="modal" data-target="#loginModal" class="btn btn-light" style="text-decoration: underline;">Log In</button></p>
             <hr>
             <br>
-            <div class="form-group row mb-0 d-flex justify-content-center">
+            <div class="form-group row mb-0 d-flex justify-content-center border-bottom">
 
                     <a href="{{ url('/auth/redirect/facebook') }}">
                     <img src="{{ url('/images/signupfb.png') }}" alt="fblog.png" style="width: 318px; height: 52px; object-fit: cover; object-position: 50% 50%;">
@@ -71,7 +56,7 @@
             </div>
             <hr>
             <br>
-            <div class="form-group row mb-0 d-flex justify-content-center">
+            <div class="form-group row mb-0 d-flex justify-content-center border-bottom">
                 <button type="button" class="btn " data-dismiss="modal" data-toggle="modal" data-target="#registerModal" >
                     <img src="{{ url('/images/signupemail.png') }}" alt="fblog.png" style="width: 318px; height: 52px; object-fit: cover; object-position: 50% 50%;">
 
@@ -140,6 +125,7 @@
         </div>
 
         <div class="form-group row">
+            <div></div>
             <div class="col-md-6 offset-md-4">
                 <div class="form-check">
                     <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
@@ -152,6 +138,7 @@
         </div>
 
         <div class="form-group row mb-0">
+            <div></div>
             <div class="col-md-8 offset-md-4">
                 <button type="submit" class="btn btn-primary">
                     {{ __('Login') }}

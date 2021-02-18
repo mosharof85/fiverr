@@ -59,6 +59,7 @@ Auth::routes();
 Route::get('/home', function () {
     return view('welcome');
 })->name('home');
+
 Route::get('/auth/redirect/{provider}',[SocialController::class,'redirect']);
 Route::get('/callback/{provider}', [SocialController::class,'callback']);
 Route::get('password/reset/email', [MailController::class,'sendForgotPassword']);

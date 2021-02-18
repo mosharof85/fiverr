@@ -1,4 +1,4 @@
-@extends('layouts.dropshipping-pageHeaderFooter')
+@extends('layouts.combineHeaderFooter')
 
 
 @section('content')

@@ -356,7 +356,7 @@
         }
 
         .orderSummary .bold{
-            font-weight: bold;
+            font-weight: 600;
             font-size: 14px;
         }
 
@@ -667,11 +667,63 @@
 
     </style>
 
+    <style>
+        .modal-content hr{
+            display: none;
+        }
+
+        .modal-content .form-group.d-flex{
+            width: 100%;
+            margin-left: 1px;
+            padding-bottom: 20px;
+            margin-bottom: 20px !important;
+        }
+
+        .modal-content button img{
+            width: 100% !important;
+        }
+
+        .modal-content p{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #registerModalForm .w-50{
+            width: 100% !important;
+        }
+
+        #registerModalForm .form-row:not(.w-50){
+            margin-left: 0;
+            margin-right: 8px;
+        }
+
+        #registerModalForm .col-form-label{
+            padding-left: 0;
+        }
+
+        #registerModal .row-topbar{
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #registerModalForm .row-password-confirm{
+            width: calc(50% - 10px);
+            margin-left: 5px;
+            margin-right: 5px;
+        }
+
+        @media screen and (max-width: 767px) {
+            #registerModalForm .row-password-confirm{
+                width: 100%;
+            }
+        }
+    </style>
+
 </head>
     <main id="page1" class="container-fluid extra__container__fluid">
         <div class="wrapper">
         @include('components.navbar')
-
 
             @yield('content')
 
