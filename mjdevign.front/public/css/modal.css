@@ -292,24 +292,29 @@
 }
 
 .modal-content form .col-form-label{
-    text-align: center;
+    text-align: left;
     font-size: 14px;
     font-family: 'Montserrat', sans-serif;
     color: #000000;
     padding-bottom: 10px;
     font-weight: 700;
+    display: block;
 }
 
-#registerModalForm select,
+.modal-content form select,
 .modal-content form input{
     padding: 10px;
     border-radius: 5px;
-    background-color: #212529;
+    background-color: rgb(232, 240, 254);
     border: 1px solid #dee2e6;
     font-size: 14px;
     width: 100%;
     font-family: 'Open Sans', sans-serif;
     margin-bottom: 15px;
+}
+
+.modal-content form input:focus{
+    background-color: #FFFFFF;
 }
 
 .modal-content form input[type='checkbox']{
@@ -340,45 +345,6 @@
     font-family: 'Open Sans', sans-serif;
     margin: 15px 0;
     text-decoration: underline;
-}
-
-#registerModalForm .col-form-label{
-    margin-bottom: 10px;
-}
-
-#registerModalForm .form-row{
-    display: grid;
-    grid-template-columns: 1fr;
-    margin-bottom: 10px;
-}
-
-#registerModalForm .form-row.w-50{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 20px;
-}
-
-#registerModalForm select,
-#registerModalForm input{
-    background-color: #FFFFFF;
-}
-
-#registerModalForm .form-group *{
-    display: block;
-    text-align: left;
-}
-
-#registerModalForm .form-row:not(.w-50) *{
-    justify-content: flex-start
-}
-
-#registerModalForm select{
-    width: 210px;
-    padding: 10px;
-}
-
-#registerModalForm button{
-    text-align: center !important;
 }
 
 .border-bottom{
@@ -440,5 +406,35 @@
     margin-left: 10px;
 }
 
+#registerModal .modal-content{
+    max-height: 100%;
+}
 
+#registerModal .row-topbar{
+    display: flex;
+}
 
+#registerModal .row-topbar .col2{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 20px;
+}
+
+#registerModal .already-user{
+    justify-content: flex-start;
+}
+
+#registerModal .w-50{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 20px;
+}
+
+#registerModal .row-submit{
+    padding: 30px 0 47px;
+}
+
+#registerModal button[type='submit']{
+    width: 189px;
+}
